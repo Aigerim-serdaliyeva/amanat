@@ -1,0 +1,352 @@
+
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+  
+  .header {
+
+  }
+
+  .main-menu {
+    ul {
+      li {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .hamburger {
+    display: block;
+  }    
+
+  .header {
+    padding: 5px 0;
+
+    &__top {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer {
+    text-align: center;
+
+    &__content {
+      flex-direction: column;
+
+      & > * {
+          margin: 0 0 20px 0 !important;            
+      }
+    }
+  }
+
+	.main-menu {
+    display: none;
+    background-color: $black;
+    position: fixed;
+    top: 94px;
+    left: 0;
+    right: 0;
+    text-align: left;
+    margin-left: 0;
+    z-index: 98;
+    padding: 10px 0;
+
+		ul {
+			display: block;
+			height: auto;
+      padding: 0;
+      margin: 0;
+
+			li {
+        margin: 0 0 5px;
+
+        &:last-child {
+          margin: 0;
+        }
+			}
+		}
+  }    
+
+  .s {
+    
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {  
+
+  .form {
+    &__title {
+      font-size: 16px;
+    }
+    &--horizontal {
+      &::before {
+        display: none;
+      }
+      .form {
+        &__content {
+          flex-direction: column;
+          max-width: 500px;
+        } 
+        
+        &__info {
+          max-width: 500px;
+        }
+      }
+
+      .input-div {
+        margin-right: 0;
+      }  
+    }
+
+    &--vertical {
+      max-width: none;
+      .form {
+        &__content {
+          max-width: none;
+        }
+      }
+    }
+
+    .input-div, .button {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  .srok {
+    &__title {
+      margin-right: 5px;
+    }
+    .timer-flipchart-inner {
+      font-size: 23px;
+    }
+  }
+
+  .header {
+    padding: 10px 0;
+    .logo {
+      margin-bottom: 0;
+      flex-shrink: 0;
+    }
+    .grow {
+      display: block;
+    }
+  }
+
+  .main-menu {
+    top: 64px;
+  }
+
+  .section {
+    &-title {
+      font-size: 24px;
+    }      
+  }
+
+  .s {
+    &-main {
+      &__title {
+        font-size: 22px;
+      }
+    } 
+
+    &-about {
+      &__block {
+        text-align: center;
+      }
+    }
+
+    &-reviews {
+
+      .review {
+        display: block;
+        &__header {
+          display: block;
+          margin-bottom: 20px;
+          img {
+            text-align: center;
+            margin: 0 auto 10px;
+          }
+        }
+        &__content {
+          margin-bottom: 20px;
+        }
+        &__title {
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-advantages {
+      .advantage {
+        &__result {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &-complex {
+      &__content {
+        display: block;
+      }
+      .complex {
+        margin-bottom: 20px;
+        &__vopros {
+          font-size: 16px;
+        }
+        &__block {
+          &__title {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    &-contact {
+      .contact {
+        position: static;
+        margin: 20px auto;
+        display: block;
+      }
+    }
+
+    &-thanks {
+      padding-top: 100px !important;
+      &__text {
+        font-size: 18px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+  .call-me {
+    display: flex;
+  }
+
+  .s {
+
+    &-main {
+      padding-top: 100px;
+      &__title {
+        display: none;
+      }
+      &__title1 {
+        display: block;
+        font-size: 24px;
+      }
+    }
+
+    &-about {
+      &__content {
+        display: none;
+      }
+      .carousel-about {
+        display: block;        
+      }
+    }
+
+    &-hranenya {
+      .carousel-hranenya {
+        padding: 0 40px;
+      }
+      .hranenya {
+        &__title {
+          font-size: 14px;
+          max-width: 200px;
+          margin: 0 auto 10px
+        }
+      }
+    }
+
+    &-service {
+      .service {
+        margin-bottom: 25px;
+        &__title {
+          margin-bottom: 10px;
+        }
+        ul {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &-advantages {
+      .advantage {
+        &__title {
+          margin-right: 10px;
+        }
+        &__block {
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-reviews {
+      .carousel-reviews {
+        padding: 0;
+      }
+      .review {
+        &__title {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &-thanks {
+      padding: 150px 0 50px;
+      
+      &-title {
+        font-size: 30px;
+      }
+
+      &-text {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+  
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+  .main-menu {
+		.container {
+			width: auto;
+			padding: 0;
+		}
+  }
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
