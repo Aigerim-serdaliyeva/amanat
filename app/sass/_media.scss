@@ -93,6 +93,11 @@
         &__content {
           flex-direction: column;
           max-width: 500px;
+          &--max {
+            .button {
+              font-size: 12px;
+            }
+          }
         } 
         
         &__info {
@@ -179,7 +184,7 @@
           }
         }
         &__content {
-          margin-bottom: 20px;
+          margin: 0 0 20px 0;
         }
         &__title {
           text-align: center;
@@ -213,6 +218,18 @@
       }
     }
 
+    &-cooperate {
+      &__content {
+        display: block;
+        max-width: none;
+        img {
+          text-align: center;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+
     &-contact {
       .contact {
         position: static;
@@ -237,6 +254,7 @@
     display: flex;
   }
 
+  
   .s {
 
     &-main {
@@ -251,6 +269,34 @@
     }
 
     &-about {
+
+      .owl-carousel {
+        .owl {
+    
+          &-prev, &-next {
+            position: absolute;
+            top: 50%;
+            width: 45px;
+            height: 45px;
+            background-image: url('../img/arrow-left-big.png') !important;
+            background-repeat: no-repeat !important;
+            background-position: center center !important;
+            transform: translateY(-50%);
+            outline: 0;
+            z-index: 10;
+          }
+      
+          &-prev {
+            left: 0px;
+          }
+      
+          &-next {
+            right: 0px;
+            background-image: url('../img/arrow-right-big.png') !important;
+          }
+        }
+      }
+
       &__content {
         display: none;
       }
@@ -274,22 +320,42 @@
 
     &-service {
       .service {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         &__title {
           margin-bottom: 10px;
         }
         ul {
           margin-bottom: 10px;
-        }
-      }
+          display: none;
+        }  
+        &__button {
+          display: block;
+        }      
+      }      
     }
 
     &-advantages {
       .advantage {
+        &__price {
+          flex-basis: 130px;
+          font-size: 13px;
+        }
         &__title {
           margin-right: 10px;
+          font-size: 13px;
+          flex-basis: 140px;
+          &--none {
+            display: none;
+          }
+          &__min {
+            display: block;
+            flex-basis: 140px;
+            font-weight: 500;
+            margin-right: 10px;
+          }
         }
         &__block {
+          // display: block;
           img {
             display: none;
           }

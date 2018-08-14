@@ -226,6 +226,7 @@
     margin-bottom: 30px;
     &__title {
       text-align: center;
+      font-weight: 500;
     }
     &__img {
       display: flex;
@@ -233,6 +234,14 @@
       height: 60px;
       margin: 0 auto 12px;
       text-align: center;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      width: 50%;
     }
   }
 }
@@ -293,8 +302,13 @@
       flex-grow: 1;
       li {
         list-style: none;
-        line-height: 1.4;
+        line-height: 1.5;
+        font-weight: 500;
       }
+    }
+
+    &__button {
+      display: none;
     }
 
     .button {
@@ -363,7 +377,6 @@
     &__content {
       display: flex;
       flex-direction: column;
-      // height: 100%;
       padding: 22px 18px;
       &--gray {
         background-color: #d1d1d1;
@@ -377,7 +390,6 @@
       padding: 20px 18px;
       display: flex;
       flex-direction: column;
-      // height: 100%;
       &--gray {
         background-color: $black;
       }
@@ -416,6 +428,10 @@
 
     &__title {
       flex-basis: 227px;
+      font-weight: 500;
+      &__min {
+        display: none;
+      }
     }
 
     &__price {
@@ -452,6 +468,7 @@
       background: #fff;
       &__title {
         font-size: 24px;
+        font-weight: bold;
         color: $accent;
         text-align: center;
         margin-bottom: 10px;
