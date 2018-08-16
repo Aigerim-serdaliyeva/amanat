@@ -337,27 +337,30 @@
     &-advantages {
       .advantage {
         &__price {
-          flex-basis: 130px;
-          font-size: 13px;
+          flex-basis: 120px;
+          font-size: 12px;
         }
         &__title {
-          margin-right: 10px;
-          font-size: 13px;
-          flex-basis: 140px;
+          font-size: 12px;
+          flex-basis: 120px;
           &--none {
             display: none;
           }
           &__min {
             display: block;
-            flex-basis: 140px;
+            flex-basis: 120px;
+            font-size: 12px;
             font-weight: 500;
             margin-right: 10px;
           }
         }
         &__block {
-          // display: block;
-          img {
-            display: none;
+        }
+        &__img {
+          display: none;
+          &__min {
+            display: block;
+            margin: 0 5px;
           }
         }
       }

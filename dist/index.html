@@ -152,7 +152,7 @@
                 <div class="about__img">
                   <img src="./img/about-2.png" alt="">
                 </div>
-                <div class="about__title">Площадь территории - 1 150 м²</div>
+                <div class="about__title">Площадь территории - <br> 1 150 м²</div>
               </div>
               <div class="col-sm-3 d-flex about">
                 <div class="about__img">
@@ -164,7 +164,7 @@
                 <div class="about__img">
                   <img src="./img/about-4.png" alt="">
                 </div>
-                <div class="about__title">Погрузчики, стеллажи, электроштабилеры</div>
+                <div class="about__title">Погрузчики, <br> стеллажи, <br> электроштабилеры</div>
               </div>
               <div class="col-sm-3 d-flex about">
                 <div class="about__img">
@@ -188,7 +188,7 @@
                 <div class="about__img">
                   <img src="./img/about-8.png" alt="">
                 </div>
-                <div class="about__title"> Современная система пожаротушения</div>
+                <div class="about__title"> Современная <br> система <br> пожаротушения</div>
               </div>
             </div>
             <div class="owl-carousel carousel-about">
@@ -242,8 +242,21 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 s-about__block">
-            <img src="./img/about-back.jpg" alt="">
+          <div class="col-md-4">
+            <div class="s-about__block">
+              <a href="./img/about-img-big-1.JPG" data-fancybox="certificateGallery" class="certificate">
+                <img src="./img/about-img-1.png" alt="">
+              </a>
+              <a href="./img/about-img-big-2.JPG" data-fancybox="certificateGallery" class="certificate">
+                <img src="./img/about-img-2.png" alt="">
+              </a>
+              <a href="./img/about-img-big-3.JPG" data-fancybox="certificateGallery" class="certificate">
+                <img src="./img/about-img-3.png" alt="">
+              </a>
+              <a href="./img/about-img-big-4.JPG" data-fancybox="certificateGallery" class="certificate">
+                <img src="./img/about-img-4.png" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -312,36 +325,61 @@
               <li>- гарантии сохранности</li>
               <li>- создание необходимых условий для хранения</li>
             </ul>
-            <button class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
+            <button class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
           </div>          
           <div class="col-md-4 col-sm-6 service d-flex">
             <h3 class="service__title">Курьерской доставке от двери до двери по СНГ</h3>
             <ul>
               <li>Сотрудничаем с лучшими курьерскими службами: DHL и Pony Express, и предоставляем низкую стоимость доставки от двери до двери по всем странам СНГ.</li>
             </ul>
-            <button class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
+            <button class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
           </div>
           <div class="col-md-4 col-sm-6 service d-flex">
             <h3 class="service__title">Отгрузке грузов</h3>
             <ul>
               <li>Отгрузка Ваших грузов по странам СНГ и Европы на современных фурах</li>
             </ul>
-            <button class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
+            <button class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
           </div>
           <div class="col-md-4 col-sm-6 service d-flex">
             <h3 class="service__title">Упаковке товаров и штучной сборке</h3>
             <ul>
               <li>Прочная и надежная упаковка любого вида товаров, предназначенных к отправке, по минимальным ценам.</li>
             </ul>
-            <button class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
+            <button class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
           </div>
           <div class="col-md-4 col-sm-6 service d-flex">
             <h3 class="service__title">Таможенному оформлению грузов</h3>
             <ul>
               <li>Оформление и растаможка грузов от 1 дня с доставкой до получателя</li>
             </ul>
-            <button class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
+            <button class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
           </div>
+          <div class="service__button">
+            <div class="form form--vertical">
+              <form action="/mail.php" method="post">
+                <div class="form__title">Оставьте заявку,&nbsp;<br>
+                    и мы свяжемся с Вами!</div>
+                <div class="form__content">
+                  <input type="hidden" name="info" value="Предоставляем логистические услуги">
+    
+                  <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Введите имя">
+                  </div>
+    
+                  <div class="input-div">
+                    <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>    
+                      
+                  <div class="form__info">*Ваши данные в безопасности
+                      и не будут переданы третьим лицам</div>
+                  
+                  <button class="button ajax-submit" type="submit" id="ostavit_zayavku__logisti4eskie__uslugi">Заказать обратный звонок</button>
+                </div>
+              </form>
+            </div>
+          </div>          
         </div>
       </div>
     </section>
@@ -357,8 +395,8 @@
                 <div class="review__title">Магазин строительного оборудования  </div>
               </div>
               <div class="review__content__title">Отзыв</div>
-              <div class="review__text">Уже более 3-х лет ИП Аманат показывает умение решать обозначенные задачи
-                  Все работы данной организацией решаются оперативно и качественно
+              <div class="review__text">Уже более 3-х лет ИП Аманат показывает умение решать обозначенные задачи <br>
+                  Все работы данной организацией решаются оперативно и качественно <br>
                   Команда отличается высоким профессионализмом и подтверждает свою планку компетентности</div>
             </div>
             <a href="./img/pismo-big-1.jpg" data-fancybox="certificateGallery" class="certificate">
@@ -394,38 +432,49 @@
               <div class="s-advantages__title">Приняв решение о самостоятельной аренде,
                   Вам придется:</div>
               <div class="advantage__block">
-                <div class="advantage__title">Ежемесячно платить за аренду склада, где 30% площади занимают проходы, зона упаковки и отгрузки товара  </div>
-                <img src="./img/strelka-red.png" alt="">
-                <div class="advantage__price">от 100 000 тенге в месяц
-                    от 6 000 000 тенге за 5 лет</div>
+                <div class="advantage__title advantage__title--none">Ежемесячно платить за аренду склада, где 30% площади занимают проходы, зона упаковки и отгрузки товара  </div>
+                <div class="advantage__title__min">Ежемесячно платить за аренду склада</div>
+                <div class="advantage__img">
+                  <img src="./img/strelka-red.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-red-min.png" alt="">
+                </div>
+                <div class="advantage__price">от 100 000 тенге в месяц <br>
+                    от 6000000 тенге за 5 лет</div>
               </div>
               <div class="advantage__block">
                 <div class="advantage__title">Платить ежемесячную оплату сотрудникам склада</div>
-                <img src="./img/strelka-red.png" alt="">
-                <div class="advantage__price">от 500 000 тенге в месяц
+                <div class="advantage__img">
+                  <img src="./img/strelka-red.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-red-min.png" alt="">
+                </div>
+                <div class="advantage__price">от 500 000 тенге в месяц <br>
                     от 30 000 000 тенге за 5 лет</div>
               </div>
               <div class="advantage__block">
-                <div class="advantage__title">Автоматизиваровать склад и закупить соответствующее оборудование</div>
-                <img src="./img/strelka-red.png" alt="">
-                <div class="advantage__price">от 5 000 000 за 5 лет</div>
+                <div class="advantage__title">Автоматизировать склад и закупить соответствующее оборудование</div>
+                <div class="advantage__img">
+                  <img src="./img/strelka-red.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-red-min.png" alt="">
+                </div>
+                <div class="advantage__price">от 5 000 000 за <br> 5 лет</div>
               </div>
               <div class="advantage__block">
                 <div class="advantage__title">Выделять деньги на прочие расходы: система защиты склада, транспорт и т.д.</div>
-                <img src="./img/strelka-red.png" alt="">
+                <div class="advantage__img">
+                  <img src="./img/strelka-red.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-red-min.png" alt="">
+                </div>
                 <div class="advantage__price">от 10 000 000 тенге за 5 лет</div>
               </div>
-            </div> 
-            <!-- <div class="advantage__result advantage__result--gray inverse">
-              <div class="advantage__result__title">В результате:</div>
-              <ul>
-                  <li>- Вы потратите минимум 51 000 000 тенге за 5 лет</li>
-                  <li>- Большая часть территории склада не будет использована </li>
-                  <li>- Отрегулировать рабочие процессы внутри склада и обучить 
-                      сотрудников станет для Вас затруднительной и затратной задачей</li>
-                  <li>- Есть большие риски порчи и кражи Ваших товаров</li>
-              </ul>
-            </div>            -->
+            </div>             
           </div>
 
           <div class="col-md-6 d-flex order-md-3">
@@ -446,34 +495,51 @@
               <div class="s-advantages__title">"Amanat Logistics" предоставляет
                   автоматизированный склад класса "А" с:</div>
               <div class="advantage__block">
-                <div class="advantage__title">Оборудованными складскими местами</div>
-                <img src="./img/strelka-white.png" alt="">
+                <div class="advantage__title">Оборудованными <br> складскими местами</div>
+                <div class="advantage__img">
+                  <img src="./img/strelka-white.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-white-min.png" alt="">
+                </div>
                 <div class="advantage__price advantage__price--white">Платите только за ту территорию, которую фактически используете</div>
               </div>
               <div class="advantage__block">
                 <div class="advantage__title">Обученным персоналом</div>
-                <img src="./img/strelka-white.png" alt="">
+                <div class="advantage__img">
+                  <img src="./img/strelka-white.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-white-min.png" alt="">
+                </div>
                 <div class="advantage__price advantage__price--white">Каждый из наших сотрудников знает свое дело и их не нужно обучать</div>
               </div>
               <div class="advantage__block">
                 <div class="advantage__title">Установленными системами противопожарной защиты и системы видеонаблюдения</div>
-                <img src="./img/strelka-white.png" alt="">
+                <div class="advantage__img">
+                  <img src="./img/strelka-white.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-white-min.png" alt="">
+                </div>
                 <div class="advantage__price advantage__price--white">Все ради сохранности Ваших товаров!</div>
               </div>
               <div class="advantage__block">
                 <div class="advantage__title">Возможностью страхования Вашего товара</div>
-                <img src="./img/strelka-white.png" alt="">
+                <div class="advantage__img">
+                  <img src="./img/strelka-white.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-white-min.png" alt="">
+                </div>
                 <div class="advantage__price advantage__price--white">Мы готовы нести полную ответственность за Ваши товары</div>
               </div>
             </div>  
-            <!-- <div class="advantage__result advantage__result--orange inverse">
-              <div class="advantage__result__text">Все это входит в стоимость аренды и Вам осталось только обсудить необходимую территорию к аренде склада с нами!</div>
-            </div> -->
           </div>
 
           <div class="col-md-6 d-flex order-md-4">
             <div class="advantage__result advantage__result--orange inverse">
-              <div class="advantage__result__text">Все это входит в стоимость аренды и Вам осталось только обсудить необходимую территорию к аренде склада с нами!</div>
+              <div class="advantage__result__text">Все это входит в стоимость аренды и Вам осталось только обсудить необходимую площадь с нами!</div>
             </div>
           </div>
 
@@ -527,9 +593,9 @@
           <div class="form form--vertical wow slideInLeft">
             <form action="/mail.php" method="post">
               <div class="form__title">При заказе комплекса "хранение  
-                  + упаковка+доставка" получите 
-                  каждую 10-ую доставку в течение 
-                  3 месяцев в подарок!</div>
+                + упаковка+доставка" Вы получите 
+                каждую 10-ую доставку в течение 
+                3 месяцев в подарок!</div>
               <div class="form__content">
                 <input type="hidden" name="info" value="При заказе комплекса хранение + упаковка+доставка получите 
                 каждую 10-ую доставку в течение 3 месяцев в подарок!">

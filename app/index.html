@@ -356,7 +356,29 @@
             <button class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
           </div>
           <div class="service__button">
-            <button class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
+            <div class="form form--vertical">
+              <form action="/mail.php" method="post">
+                <div class="form__title">Оставьте заявку,&nbsp;<br>
+                    и мы свяжемся с Вами!</div>
+                <div class="form__content">
+                  <input type="hidden" name="info" value="Предоставляем логистические услуги">
+    
+                  <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Введите имя">
+                  </div>
+    
+                  <div class="input-div">
+                    <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>    
+                      
+                  <div class="form__info">*Ваши данные в безопасности
+                      и не будут переданы третьим лицам</div>
+                  
+                  <button class="button ajax-submit" type="submit" id="ostavit_zayavku__logisti4eskie__uslugi">Заказать обратный звонок</button>
+                </div>
+              </form>
+            </div>
           </div>          
         </div>
       </div>
@@ -412,37 +434,47 @@
               <div class="advantage__block">
                 <div class="advantage__title advantage__title--none">Ежемесячно платить за аренду склада, где 30% площади занимают проходы, зона упаковки и отгрузки товара  </div>
                 <div class="advantage__title__min">Ежемесячно платить за аренду склада</div>
-                <img src="./img/strelka-red.png" alt="">
-                <div class="advantage__price">от 100 000 тенге в месяц
+                <div class="advantage__img">
+                  <img src="./img/strelka-red.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-red-min.png" alt="">
+                </div>
+                <div class="advantage__price">от 100 000 тенге в месяц <br>
                     от 6000000 тенге за 5 лет</div>
               </div>
               <div class="advantage__block">
                 <div class="advantage__title">Платить ежемесячную оплату сотрудникам склада</div>
-                <img src="./img/strelka-red.png" alt="">
-                <div class="advantage__price">от 500 000 тенге в месяц
+                <div class="advantage__img">
+                  <img src="./img/strelka-red.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-red-min.png" alt="">
+                </div>
+                <div class="advantage__price">от 500 000 тенге в месяц <br>
                     от 30 000 000 тенге за 5 лет</div>
               </div>
               <div class="advantage__block">
-                <div class="advantage__title">Автоматизиваровать склад и закупить соответствующее оборудование</div>
-                <img src="./img/strelka-red.png" alt="">
-                <div class="advantage__price">от 5 000 000 за 5 лет</div>
+                <div class="advantage__title">Автоматизировать склад и закупить соответствующее оборудование</div>
+                <div class="advantage__img">
+                  <img src="./img/strelka-red.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-red-min.png" alt="">
+                </div>
+                <div class="advantage__price">от 5 000 000 за <br> 5 лет</div>
               </div>
               <div class="advantage__block">
                 <div class="advantage__title">Выделять деньги на прочие расходы: система защиты склада, транспорт и т.д.</div>
-                <img src="./img/strelka-red.png" alt="">
+                <div class="advantage__img">
+                  <img src="./img/strelka-red.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-red-min.png" alt="">
+                </div>
                 <div class="advantage__price">от 10 000 000 тенге за 5 лет</div>
               </div>
-            </div> 
-            <!-- <div class="advantage__result advantage__result--gray inverse">
-              <div class="advantage__result__title">В результате:</div>
-              <ul>
-                  <li>- Вы потратите минимум 51 000 000 тенге за 5 лет</li>
-                  <li>- Большая часть территории склада не будет использована </li>
-                  <li>- Отрегулировать рабочие процессы внутри склада и обучить 
-                      сотрудников станет для Вас затруднительной и затратной задачей</li>
-                  <li>- Есть большие риски порчи и кражи Ваших товаров</li>
-              </ul>
-            </div>            -->
+            </div>             
           </div>
 
           <div class="col-md-6 d-flex order-md-3">
@@ -464,22 +496,42 @@
                   автоматизированный склад класса "А" с:</div>
               <div class="advantage__block">
                 <div class="advantage__title">Оборудованными <br> складскими местами</div>
-                <img src="./img/strelka-white.png" alt="">
+                <div class="advantage__img">
+                  <img src="./img/strelka-white.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-white-min.png" alt="">
+                </div>
                 <div class="advantage__price advantage__price--white">Платите только за ту территорию, которую фактически используете</div>
               </div>
               <div class="advantage__block">
                 <div class="advantage__title">Обученным персоналом</div>
-                <img src="./img/strelka-white.png" alt="">
+                <div class="advantage__img">
+                  <img src="./img/strelka-white.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-white-min.png" alt="">
+                </div>
                 <div class="advantage__price advantage__price--white">Каждый из наших сотрудников знает свое дело и их не нужно обучать</div>
               </div>
               <div class="advantage__block">
                 <div class="advantage__title">Установленными системами противопожарной защиты и системы видеонаблюдения</div>
-                <img src="./img/strelka-white.png" alt="">
+                <div class="advantage__img">
+                  <img src="./img/strelka-white.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-white-min.png" alt="">
+                </div>
                 <div class="advantage__price advantage__price--white">Все ради сохранности Ваших товаров!</div>
               </div>
               <div class="advantage__block">
                 <div class="advantage__title">Возможностью страхования Вашего товара</div>
-                <img src="./img/strelka-white.png" alt="">
+                <div class="advantage__img">
+                  <img src="./img/strelka-white.png" alt="">
+                </div>
+                <div class="advantage__img__min">
+                  <img src="./img/strelka-white-min.png" alt="">
+                </div>
                 <div class="advantage__price advantage__price--white">Мы готовы нести полную ответственность за Ваши товары</div>
               </div>
             </div>  

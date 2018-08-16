@@ -426,6 +426,12 @@
       }
     }
 
+    &__img {
+      &__min {
+        display: none;
+      }
+    }
+
     &__title {
       flex-basis: 227px;
       font-weight: 500;
