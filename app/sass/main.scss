@@ -434,6 +434,7 @@
 
     &__title {
       flex-basis: 227px;
+      flex-shrink: 0;
       font-weight: 500;
       &__min {
         display: none;
